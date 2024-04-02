@@ -1,0 +1,69 @@
+﻿Gracias por instalar B64 en tu dispositivo. 
+
+versión beta 1.7
+
+Esta aplicación te permitirá convertir y restaurar archivos a base64
+
+Si no sabes que es base64 te explico:
+
+Base64 es un método que te permite convertir un archivo en un texto, éste texto puede volver a convertirse en el archivo. 
+
+Se llama base64 por que se utilizan 64 caracteres imprimibles para codificar los cuales son:
+
+A-Z a-z 0-9 +/
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+
+Esto es útil para transferir archivos por la red en forma de texto, como un simple mensaje. 
+
+¿Como funciona ésta aplicación?
+
+
+Para subir un archivo primeramente debes dar en el botón 📂 buscar y seleccionar el archivo que quieras enviar, una vez que hagas esto el archivo se convertirá a texto en base64 y se mostrará una lista con las partes que debes de compartir.
+
+Seguramente te preguntarás por que se divide el texto en partes en vez de simplemente mostrar todo el texto y copiar y compartirlo de una vez. 
+
+Pues la razón para esto es que el portapapeles de android no soporta textos demasiado grandes, un MB a ti podrá parecerte poco pero un sólo MB equivale a 1×1024×1024 que son 1 048 576 caracteres, demasiado para caber en el portapapeles de android, intentar pasarle un texto demasiado grande al portapapeles provocaría un error en la aplicación. 
+
+La solución es partir el texto en partes más pequeñas que android pueda manejar fácilmente. 
+
+Debes de enviar cada una de esas partes y asegurarte de que sean enviadas en orden para que el destinatario del mensaje pueda restaurar el archivo. 
+
+
+Como descargar (Restaurar el archivo a partir de base64)
+
+Si eres el receptor del archivo debes copiar cada mensaje de texto en base64 ir a la aplicación y presionar el botón COPIAR
+
+Puedes pulsar prolongadamente sobre este para lanzar un flotante que se mostrará por encima de las demás aplicaciones, en el que está el botón pegar. 
+
+Éste botón lo que hace es agregar cada mensaje que tu copies en el potapapeles a un a la app de forma interna, si se detectara que el mensaje que esta en el portapapeles ya fue agregado a la app recibirá un mensaje de error informándoselo
+
+Cuando ya halla agregado todas las partes del mensaje, presionarás el botón 📥 guardar y en la ventana emergente indicaras  el nombre del archivo y su extensión.
+
+No tiene que poner necesariamente el mismo nombre del archivo original, pero si tiene que poner la extensión, por ejemplo una canción sería
+
+audio1.mp3
+
+una foto
+
+imagen1.jpg
+
+un video
+
+video1.mp4
+
+ y así por el el estilo con cualquier otro tipo de archivo. 
+
+Cuando haga esto das Aceptar y listo, el archivo se guardará en la carpeta 📁 B64 del almacenamiento. 
+
+Puedes usar el botón TXT para guardar el base64 como un archivo txt, esto puede ser útil para ocultar cosas de los ojos curiosos, o guardar para después seguir construyendo, por ejemplo si estas construyendo un archivo y quieres hacer un respaldo de lo que llevas echo hasta el momento ésta función puede ser de utilidad. 
+
+OJO: El archivo txt generado será alrededor de un 30% más pesado que el original. 
+
+⚠ ADVERTENCIA ⚠
+Si seleccionas un archivo muy grande para convertir es posible que la app se detenga por falta de memoria, todo depende de la capacidad de su dispositivo. 
+
+Si seleccionas un archivo demasiado grande y la app se detiene, puedes utilizar la app RAR para crear un archivo comprimido en partes, selecciona un tamaño que la app pueda procesar en tu dispositivo, 10 MB se deberían poder procesar. 
+
+
+En los ajustes puede cambiar el valor de tamaño máximo para indicar a partir de que tamaño el texto en base64 será cortado, si su dispositivo tiene la capacidad de procesar un volumen mayor de texto puede indicar un número de caracteres mayor, por defecto el texto se corta en partes de 256 000 caracteres. 

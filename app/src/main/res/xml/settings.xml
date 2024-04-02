@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Ajustes">
+        <EditTextPreference
+			android:inputType="number"
+            android:key="size"
+            android:summary="Indica la cantidad de caracteres que se muestran por parte, indicar un número mayor disminuirá el número de partes a compartir, pero el sistema podría no poder procesar un número muy grande."
+            android:title="Cantidad de caracteres por parte" />
+		<EditTextPreference
+			android:inputType="number"
+            android:key="editor"
+            android:summary="Máximo de caracteres soportados por el editor"
+            android:title="Editor"/>
+		<EditTextPreference
+			android:inputType="textUri"
+            android:key="directorio"
+            android:title="Directorio de trabajo"/>
+		<CheckBoxPreference
+            android:key="igual"
+			android:summary="Al marcar ésta opción, se preguntará antes de pegar una cadena de texto que ya este contenida en la lista"
+            android:title="Pegar textos iguales" />
+		<CheckBoxPreference
+            android:key="info"
+			android:summary="Desmarque esta opción para mostrar el mensaje de bienvenida nuevamente la próxima vez que inicie la app"
+            android:title="Mensaje inicial" />
+		
+		<ListPreference
+            android:entries="@array/base64type"
+            android:entryValues="@array/base64typeValues"
+            android:key="b64type"
+            android:summary="Seleccione el método de codificación para base64 "
+            android:title="Tipo de base64" />
+    </PreferenceCategory>
+	<PreferenceCategory android:title="IDENTIFICAR PARTES">
+		<CheckBoxPreference
+            android:key="partes"
+			android:summary="Si se activa esto, si pondrá una indicación cada una cierta cantidad caracteres indicando el número de la parte o ID"
+            android:title="Mostrar ID en cada parte" />
+		<EditTextPreference
+			android:inputType="numberSigned"
+            android:key="id_size"
+			android:summary="Indique por cada cuantos caracteres indicar un ID"
+            android:title="Caracteres por ID"/>
+	</PreferenceCategory>
+    <PreferenceCategory android:title="Selección de archivos">
+        <ListPreference
+            android:entries="@array/filePicker"
+            android:entryValues="@array/filePickerValues"
+            android:key="filePicker"
+            android:summary="Elija entre usar el FilePicker interno de la app para seleccionar los archivos o usar el del sistema android"
+            android:title="Método para seleccionar archivos" />
+    </PreferenceCategory>
+      	<PreferenceCategory android:title="Acerca de...">
+		<Preference
+			android:icon="@drawable/ic_launcher"
+			android:summary="@string/exp1"
+            android:title="B64 (Beta) 1.7.1"
+			android:key="ayuda"/>
+		<Preference
+			android:summary="@string/t"
+            android:title="Canal en Telegram"
+			android:key="telegram"
+			android:icon="@drawable/telegram"/>
+		<Preference
+			android:summary="Grupo en toDus para compartir contenido a través de texto en base64"
+            android:title="Grupo en toDus"
+			android:key="todus"
+			android:icon="@drawable/todus"/>
+			<Preference
+				android:summary="Grupo en Whatsapp donde podrás interactuar con los demás usuarios de B64"
+				android:title="Grupo en Whatsapp"
+				android:key="whatsapp"
+				android:icon="@drawable/whatsapp"/>
+	</PreferenceCategory>
+</PreferenceScreen>

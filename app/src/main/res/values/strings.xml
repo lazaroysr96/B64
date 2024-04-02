@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">B64 (Beta)</string>
+	<string name="exp1">B64 permite codificar cualquier archivo a texto en base64, Toque aquí para enviar un correo al desarrollador.</string>
+	<string name="t">Puedes suscribirte a mi canal en Telegram para recibir actualizaciones de esta aplicación, mi nombre de usuario en esta plataforma es @lazaroyunier</string>
+</resources>
